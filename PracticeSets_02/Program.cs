@@ -10,13 +10,15 @@ namespace PracticeSets_02
     {
         static void Main(string[] args)
         {
-            /*
-             * Write a program that prints all the even numbers from 1 to 20 using a for loop.
-             */
-
-            int num1 = 21;
-            for (int i = 2; i < num1; i += 2)
-            { Console.WriteLine(i); }
+           
+            for (int num = 1; num <=20; num++)
+            {
+                if (num % 2 == 1)
+                {
+                    Console.WriteLine(+num + "odd numbers");
+                }
+                
+            }
         }
     }
 }
