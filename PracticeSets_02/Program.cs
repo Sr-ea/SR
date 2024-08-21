@@ -15,7 +15,7 @@ namespace PracticeSets_02
             {
                 if (num % 2 == 1)
                 {
-                    Console.WriteLine(+num + "odd numbers");
+                    Console.WriteLine(+num + " odd numbers");
                 }
                 
             }
