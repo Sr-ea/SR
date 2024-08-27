@@ -4,21 +4,26 @@ namespace PS02_03
 {
     internal class Program
     {
-        static void Main(string[] args)
+
+        static void Main(string[] args) //rhea
         {
-         
-            Console.Write("Enter a number: ");
-            int num = int.Parse(Console.ReadLine());
 
-            int sum = 0;
+            Console.Write("Enter a letter: ");
+            char chara = char.Parse(Console.ReadLine().ToLower());
 
-            while (num > 0)
+            if (chara == 'a' || chara == 'e' || chara == 'i' || chara == 'o' || chara == 'u')
             {
-                sum += num % 10;
-                num /= 10;
+                Console.Write($"letter {chara} is a vowel");
             }
 
-            Console.WriteLine("Sum of digits: " + sum);
+            else
+            {
+                Console.Write($"letter {chara} is a consonant"); 
+            }
+
+
+
+
         }
     }
 }
